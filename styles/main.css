@@ -1,0 +1,260 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #f67ed2; /* rgb(139, 74, 139) */
+    --secondary-color: rgb(218, 109, 185); /* rgb(110, 58, 110) */
+    height: 100%;
+    width: 100%;
+}
+
+ 
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+body{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    /* scroll-behavior: smooth; */
+    height: 100%;
+    width: 100%;
+    font-size: 1.4rem;
+    /* display: flex;
+    justify-content: center; */
+}
+
+
+
+@media screen and (max-width: 500) { 
+    /* anything this small can't scroll to the sides, 
+    content outside of the viewport is hidden*/
+    html, body {
+        height: 100%;
+        width: 100%;
+        overflow-x: visible; /*hidden; */
+    }
+}
+@media (pointer: coarse) { 
+    /* if browser supports this, applies to touch screens*/
+    html, body {
+        height: 100%;
+        width: 100%;
+        overflow-x: visible; /*hidden; */
+    }
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.page-container {
+    max-width: 1500px;
+    padding: 0 1rem;
+}
+
+    
+ul li {
+    padding: 0;
+    margin: 0 0 0 30px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+p {
+    max-width: 60ch;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+    h1 {
+        text-align: left;
+    }
+
+@media only screen and (max-width: 1000px) { 
+    .menu-title-shifted { 
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 400px) { 
+    .menu-title-shifted { 
+        font-size: .7rem;
+    }
+}
+@media only screen and (max-width: 320px) { 
+    .menu-title-shifted { 
+        size: .55rem;
+    }
+}
+
+.content-row{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+    .content-row h1 {
+        color: var(--primary-color);
+        width: 100%;
+        align-self: left;
+    }
+
+    .content-row h2 {
+        font-size: 1em;
+    }
+
+    .content-row > div {
+        height: 100%;
+        width: 100%;
+    }
+
+    .vertical{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .horizontal{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .contact-us {
+        width: 90%;
+        height: 5rem;
+        color: grey;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .rechart {
+        height: calc(100 * var(--vh));
+        width:100vw;
+        max-width: 1000px;
+        max-height: 1000px;
+        font-size: 1rem;
+        padding: 1rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        padding-bottom: .5rem;
+    }
+    @media only screen and (max-width: 1700px) and (orientation: landscape) { 
+        .rechart {
+            height: calc(90 * var(--vh));
+            width: calc(110 * var(--vh));
+            max-width: 100vw;
+        }
+    }
+    @media only screen and (max-width: 1000px) and (orientation: landscape) { 
+        .rechart {
+            height: calc(90 * var(--vh));
+            width: calc(100 * var(--vh));
+            max-width: 100vw;
+        }
+    }
+    @media only screen and (max-width: 650px) and (orientation: landscape) { 
+        .rechart {
+            height: calc(90 * var(--vh));
+            width: calc(140 * var(--vh));
+            max-width: 100vw;
+        }
+    }
+    @media only screen and (max-width: 500px) and (orientation: landscape) { 
+        .rechart {
+            height: calc(85 * var(--vh));
+            width: calc(155 * var(--vh));
+            max-width: 100vw;
+        }
+    }
+
+        .rechart-slider {
+            display: flex;
+            flex-direction: row;
+            gap: .2rem;
+            justify-content: center;
+            width: 75%;
+            height: 20%;
+            align-self: flex-start;
+        }
+        @media only screen and (max-width: 1000px) { 
+            .rechart-slider {
+                font-size: .7rem;
+            }
+        }
+        @media only screen and (max-width: 700px) { 
+            .rechart-slider {
+                font-size: .55rem;
+            }
+        }
+        @media only screen and (max-width: 500px) { 
+            .rechart-slider {
+                font-size: .5rem;
+            }
+        }
+        @media only screen and (max-width: 500px) and (min-height: 500px) { 
+            .rechart-slider {
+                font-size: .9rem;
+            }
+        }
+
+.tooltiptext {
+   color: white;
+}
+
+/*background-color: rgb(1, 1, 1, .1);*/
+.custom-tooltip {
+    background-image: radial-gradient(black 0%, transparent 100%);
+    position: 'absolute';
+    top: 0;
+    left: 0;
+    font-size: .6rem;
+}
+/* @media only screen and (max-width: 700px) {
+    .custom-tooltip {
+        font-size: .8rem;
+    }
+}
+@media only screen and (max-width: 500px) { 
+    .custom-tooltip {
+        font-size: .6rem;
+    }
+}
+@media only screen and (max-width: 500px) and (min-height: 500px) { 
+    .custom-tooltip {
+        font-size: .9rem;
+    }
+} */
