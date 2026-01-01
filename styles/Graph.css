@@ -5,8 +5,8 @@
 }
 
 :root {
-    --primary-color: #f67ed2; /* rgb(139, 74, 139) */
-    --secondary-color: rgb(218, 109, 185); /* rgb(110, 58, 110) */
+    --primary-color: #D81B60; /* #f67ed2; rgb(139, 74, 139) */
+    --secondary-color: #b2164f; /*#da6db9; rgb(110, 58, 110) */
     height: 100%;
     width: 100%;
 }

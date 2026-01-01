@@ -143,7 +143,7 @@ const Graph = () => {
                     <Line 
                       type="monotone" 
                       dataKey="exponential" 
-                      name="With Accumate" 
+                      name="With Buul" 
                       stroke={primaryColor}
                       dot={false} 
                       strokeWidth={3}
@@ -152,7 +152,7 @@ const Graph = () => {
                     <Line 
                       type="monotone" 
                       dataKey="constant" 
-                      name="Without Accumate" 
+                      name="Without Buul" 
                       stroke="#ffffff"
                       dot={false} 
                       strokeWidth={3}
@@ -179,12 +179,12 @@ const Graph = () => {
                   <FiInfo data-tooltip-id="custom-tooltip" />
                   <ReactTooltip id="custom-tooltip" place='right'>
                       <div className='tooltiptext'> 
-                          With Accumate:
+                          With Buul:
                           <ul>
                               <li>4.6% cashback rate</li>
                               <li>12% annualized returns in S&P 500</li>
                           </ul>
-                          Without Accumate:
+                          Without Buul:
                           <ul>
                               <li>1.5% cashback</li>
                               <li>No investment of cashback</li>

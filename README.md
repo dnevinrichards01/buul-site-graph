@@ -1,21 +1,15 @@
-# React + TypeScript + Vite
+## Original Buul website's interactive Graph (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[You can view the graph here](https://buul-site-graph.vercel.app/)
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+*For details and a tutorial, visit [Buul's backend repo](https://github.com/dnevinrichards01/buul_backend/tree/try_it_out_local) which is serving as the Buul project's 'hub'.*
 
-## Deploy Your Own
+### Description
+This is part of my first ground-up React project which you can see [here](https://github.com/dnevinrichards01/accumate_frontend).
 
-Deploy your own Vite project with Vercel.
+Resize the window to see the responsive design in action!
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/vite-react&template=vite-react)
+It is no longer being maintained so ***formatting has begun to degrade.***
 
-_Live Example: https://vite-react-example.vercel.app_
+Based on your monthly spending, we predict how much money you can make by investing with Buul (which was called Accumate at the time). The assumptions used can be seen by hovering over the tooltip.
 
-### Deploying From Your Terminal
-
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
-
-```shell
-$ vercel
-```
